@@ -1,0 +1,19 @@
+This is a little utility to compare version control systems, the 
+space they use, the time it takes to commit, etc.
+
+To use it you'll need to create a data directory with arbitrary 
+files in it. Put a bunch of mp3 files in there, or a bunch of text
+files, or whatever you want.
+
+After that you should be able to run:
+
+  compare.py
+
+and see some numbers for how much space the various repositories take up,
+how long it takes to modifications, etc.
+
+You'll need to have python, git, mercurial and dflat [1] installed, and be on
+a Unix system. Dflat is a utility that's on PyPI, which you should be able
+to install with:
+
+  easy_install dflat
